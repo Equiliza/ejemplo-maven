@@ -61,6 +61,7 @@ public class RestData {
     	response.setRecovered(recovered);
     	response.setCountry(message);
     	response.setMensaje("ok");
+    	response.setMensaje("ok");
 
 		return response;		
 	}
