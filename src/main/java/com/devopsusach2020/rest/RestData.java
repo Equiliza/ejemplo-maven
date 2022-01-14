@@ -62,6 +62,12 @@ public class RestData {
     	response.setCountry(message);
     	response.setMensaje("ok");
 
+    	response.setConfirmed(confirmed);
+    	response.setDeaths(death);
+    	response.setRecovered(recovered);
+    	response.setCountry(message);
+    	response.setMensaje("ok");
+
 		return response;		
 	}
 	
