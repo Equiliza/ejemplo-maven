@@ -39,7 +39,7 @@ pipeline {
 		    packages: [[$class: 'MavenPackage',
 			mavenAssetList: [[classifier: '',
 			extension: '',
-			filePath: ''C:/Users/Patric~1/Desktop/Ejercicio/ejemplo-maven/build/DevOpsUsach2020-0.0.1.jar]],
+			filePath: 'C:/Users/Patric~1/Desktop/Ejercicio/ejemplo-maven/build/DevOpsUsach2020-0.0.1.jar']],
 			mavenCoordinate: [artifactId: 'DevOpsUsach2020',
 			groupId: 'com.devopsusach2020',
 			packaging: 'jar',
