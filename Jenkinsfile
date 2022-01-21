@@ -35,7 +35,7 @@ pipeline {
         }
 	stage('Nexus Upload') {
             steps {
-		    nexusPublisher nexusInstanceId: 'nexus_test', nexusRepositoryId: 'test-repo',
+		    nexusPublisher nexusInstanceId: 'test-nexus', nexusRepositoryId: 'test.nexus',
 		    packages: [[$class: 'MavenPackage',
 			mavenAssetList: [[classifier: '',
 			extension: '',
