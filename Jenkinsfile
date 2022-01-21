@@ -43,7 +43,7 @@ pipeline {
 			mavenCoordinate: [artifactId: 'DevOpsUsach2020',
 			groupId: 'com.devopsusach2020',
 			packaging: 'jar',
-			version: '1.0.0']
+			version: '0.0.1']
 			]]
             }
 	}
