@@ -5,7 +5,8 @@ pipeline {
         stage('Nexus Download') {
             steps {
                 script {
-                    bat "curl -X GET -u admin:Pelusa50# http://localhost:8081/repository/test.nexus/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar -O"                       
+                    bat "curl -X GET -u admin:Pelusa50# http://localhost:8081/repository/test.nexus/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar -O"  
+                    bat "dir" 
                 }
             }
         }
@@ -15,6 +16,11 @@ pipeline {
                     bat "start /min mvnw spring-boot:run &"
                     sleep 20
                 }
+            }
+        }
+	stage('TestApp') {
+            steps {
+                    bat "start chrome http://localhost:8082/rest/mscovid/test?msg=testing"
             }
         }
 	stage('Nexus Upload') {
@@ -33,5 +39,4 @@ pipeline {
 	}
     }
 }
-
 

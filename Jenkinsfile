@@ -20,7 +20,7 @@ pipeline {
         }
 	stage('TestApp') {
             steps {
-                    bat "start chrome http://localhost:8081/rest/mscovid/test?msg=testing"
+                    bat "start chrome http://localhost:8082/rest/mscovid/test?msg=testing"
             }
         }
 	stage('Nexus Upload') {
